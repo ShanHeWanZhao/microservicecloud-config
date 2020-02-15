@@ -8,7 +8,7 @@ server:
 spring:
   profiles: dev   # 开发环境
   application:
-    name: microservicecloud-config-client-remoteDev           # 远程仓库Dev环境名
+    name: microservicecloud-config-client-remoteDev          # 远程仓库Dev环境名
 
 eureka:
   client:
@@ -18,7 +18,7 @@ eureka:
 server: 
   port: 8202
 spring:
-  profiles: test #开发环境
+  profiles: test  # 测试环境
   application:
     name: microservicecloud-config-client-remoteTest          # 远程仓库Test环境名
 
