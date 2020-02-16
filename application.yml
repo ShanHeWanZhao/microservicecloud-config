@@ -1,5 +1,4 @@
 #  请保存为UTF-8格式
-
 spring:
   profiles:
     active: dev
