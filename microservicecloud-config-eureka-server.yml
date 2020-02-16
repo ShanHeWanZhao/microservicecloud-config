@@ -1,7 +1,6 @@
 spring:
   profiles:
-    active:
-    - dev
+    active: dev
 ---
 # 配置环境为dev环境
 # 该eureka server的port为7001，注册地址用7001的

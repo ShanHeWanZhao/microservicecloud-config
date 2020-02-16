@@ -1,7 +1,6 @@
 spring:
   profiles:
-    active:
-    - dev
+    active: dev
 ---
 # 该配置注册到7001的eureka server
 # 访问端口为8001，数据库为db01
