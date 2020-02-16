@@ -64,7 +64,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka7001.com:7001/eureka
+      defaultZone: http://eureka7002.com:7002/eureka
   instance:
     instance-id: config-dept:8002                 # Eureka的服务端的该微服务名Status名修改
     prefer-ip-address: true
