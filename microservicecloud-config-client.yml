@@ -1,28 +1,26 @@
-#  保存为UTF-8格式
-server:
+# 保存为UTF-8编码
+spring:
   profiles:
     active: dev
 ---
-server: 
+server:
   port: 8201
 spring:
-  profiles: dev   # 开发环境
+  profiles: dev    # dev环境
   application:
-    name: microservicecloud-config-client-remoteDev          # 远程仓库Dev环境名
-
+    name: microservicecloud-config-client-remoteDev       # remote仓库Dev环境名
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka-dev.com:7001/eureka/         # 不用配置hosts文件，测试使用
+      defaultZone: http://eureka-dev.com:7001/erueka/   # 不用在hosts文件中映射，仅测试而已
 ---
-server: 
+server:
   port: 8202
 spring:
-  profiles: test  # 测试环境
+  profiles: test     # test环境
   application:
-    name: microservicecloud-config-client-remoteTest          # 远程仓库Test环境名
-
+    name: microservicecloud-config-client-remoteTest       # remote仓库Dev环境名
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka-test.com:7001/eureka/         # 不用配置hosts文件，测试使用
+      defaultZone: http://eureka-test.com:7002/erueka/   # 不用在hosts文件中映射，仅测试而已
